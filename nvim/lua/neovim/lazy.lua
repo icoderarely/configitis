@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ import = "neovim.plugins" },
 	{ import = "neovim.plugins.lsp" },
-	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 }, {
 	checker = {
 		enabled = true,
