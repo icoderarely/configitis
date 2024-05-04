@@ -56,5 +56,10 @@ vim.keymap.set("n", "gs", "^", { desc = "Goto first non-whitespace character" })
 vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- Insert lines above/below without leaving normal mode
-vim.keymap.set("n", "oo", "o<Esc>k", opts)
-vim.keymap.set("n", "OO", "O<Esc>j", opts)
+-- vim.keymap.set("n", "ee", "o<Esc>k", opts)
+-- vim.keymap.set("n", "ww", "O<Esc>j", opts)
+
+vim.keymap.set({ "n" }, "<leader>cf", ":CompetiTest receive problem<CR>", { noremap = true, silent = true })
+vim.keymap.set({ "n" }, "<leader>ct", ":CompetiTest run<CR>", { noremap = true, silent = true })
+vim.keymap.set({ "n" }, "<leader>ca", ":CompetiTest add_testcase<CR>", { noremap = true, silent = true })
+vim.keymap.set({ "n" }, "<leader>cd", ":CompetiTest delete_testcase<CR>", { noremap = true, silent = true })
